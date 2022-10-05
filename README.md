@@ -1,3 +1,3 @@
 # sass-basic-setup
 Basic sass setup
-sass --watch input.scss output.css
+sass  ./styles/style.scss ./styles/style.css
