@@ -1,0 +1,44 @@
+$myFont: Helvetica, sans-serif;
+$myBorderColor: red;
+$myFontSize: 18px;
+$myWidth: 680px;
+$myHeight: 680px;
+$myColor: green;
+$mybgcolor: pink;
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+}
+#container {
+  width: $myWidth;
+  height: $myHeight;
+  border: 3px solid $myBorderColor;
+  background-color: $mybgcolor;
+}
+
+h1 {
+  $myColor: blue !global;
+  color: $myColor;
+}
+p {
+  color: $myColor;
+}
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+    border: 1px solid $myBorderColor;
+  }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    border: 1px solid $myColor;
+  }
+}
